@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Main" id="BYZ-38-t0r" customClass="ViewController" customModule="CustomVision" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JWx-H9-rm4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6En-cL-0U5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
+                                <subviews>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qj3-Q2-ftL">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="139"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="i8s-iK-Leb">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="139"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OvH-MG-ov2">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="139"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="U6y-Op-q3b">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="139"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r20-NH-Pb9">
+                                                                <rect key="frame" x="15" y="79" width="75" height="39"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                                <state key="normal" title="Camera">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="tap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Yk-Wy-IxR"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oue-cw-Pde">
+                                                                <rect key="frame" x="347" y="79" width="46" height="46"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
+                                                                <state key="normal" title="Info">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="pushbtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="osI-j3-ajy"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </view>
+                                                    <vibrancyEffect>
+                                                        <blurEffect style="light"/>
+                                                    </vibrancyEffect>
+                                                </visualEffectView>
+                                            </subviews>
+                                        </view>
+                                        <blurEffect style="dark"/>
+                                    </visualEffectView>
+                                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kmx-HW-VDO">
+                                        <rect key="frame" x="0.0" y="139" width="414" height="414"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Kmx-HW-VDO" secondAttribute="height" multiplier="1:1" id="C3g-oq-Fkt"/>
+                                        </constraints>
+                                    </view>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bpC-Eh-Bvn">
+                                        <rect key="frame" x="0.0" y="553" width="414" height="139"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="BGD-WT-Lla">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="139"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J7z-pb-8AQ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="139"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="ryQ-hh-PzX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="139"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    </view>
+                                                    <vibrancyEffect>
+                                                        <blurEffect style="light"/>
+                                                    </vibrancyEffect>
+                                                </visualEffectView>
+                                            </subviews>
+                                        </view>
+                                        <blurEffect style="dark"/>
+                                    </visualEffectView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="bpC-Eh-Bvn" firstAttribute="height" secondItem="Qj3-Q2-ftL" secondAttribute="height" id="SmY-GR-j8u"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6En-cL-0U5" firstAttribute="top" secondItem="JWx-H9-rm4" secondAttribute="top" id="J9T-fF-W5u"/>
+                            <constraint firstItem="JWx-H9-rm4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LSX-6i-OKS"/>
+                            <constraint firstItem="6En-cL-0U5" firstAttribute="trailing" secondItem="JWx-H9-rm4" secondAttribute="trailing" id="O3A-J9-Y8H"/>
+                            <constraint firstAttribute="trailing" secondItem="JWx-H9-rm4" secondAttribute="trailing" id="Rfp-hf-TFm"/>
+                            <constraint firstItem="6En-cL-0U5" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Sxk-CT-YxZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JWx-H9-rm4" secondAttribute="bottom" id="bOb-7T-Oj6"/>
+                            <constraint firstItem="JWx-H9-rm4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hgo-66-qA4"/>
+                            <constraint firstItem="6En-cL-0U5" firstAttribute="leading" secondItem="JWx-H9-rm4" secondAttribute="leading" id="t9g-F0-k82"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="lowerView" destination="bpC-Eh-Bvn" id="GzL-jd-4RL"/>
+                        <outlet property="previewView" destination="JWx-H9-rm4" id="7YC-f8-il8"/>
+                        <outlet property="stackView" destination="6En-cL-0U5" id="X5W-a0-atV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Zec-Vn-p7c">
+            <objects>
+                <viewController id="lx7-p5-enG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kBD-AD-Tvg"/>
+                        <viewControllerLayoutGuide type="bottom" id="hBV-K2-HrN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z5c-c1-RXu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OJ9-Cp-mDy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1288" y="123"/>
+        </scene>
+        <!--Gallery View Controller-->
+        <scene sceneID="EqP-Hf-TNM">
+            <objects>
+                <viewController storyboardIdentifier="CameraPage" id="EKa-QK-P2i" customClass="GalleryViewController" customModule="CustomVision" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HvK-F1-ZAt"/>
+                        <viewControllerLayoutGuide type="bottom" id="QX1-nA-8ym"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="top" id="7GU-Ap-dc4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5t9-8m-VSr">
+                                <rect key="frame" x="20" y="28" width="56" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Back"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="coe-zy-HQv">
+                                <rect key="frame" x="19" y="654" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Gallery"/>
+                                <connections>
+                                    <action selector="accessGallery:" destination="EKa-QK-P2i" eventType="touchUpInside" id="pmI-K3-nAj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cfi-MC-ClV">
+                                <rect key="frame" x="166" y="623" width="83" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Take"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="EKa-QK-P2i" eventType="touchUpInside" id="bng-BQ-9Gj"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Brh-5L-joU">
+                                <rect key="frame" x="0.0" y="74" width="414" height="512"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hpw-eB-4mN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2194" y="123"/>
+        </scene>
+        <!--Frangipani-->
+        <scene sceneID="Yao-Vl-bz0">
+            <objects>
+                <viewController storyboardIdentifier="Frangipani" id="fk7-El-zSI" customClass="Frangipani" customModule="CustomVision" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BD3-ik-5T7"/>
+                        <viewControllerLayoutGuide type="bottom" id="SRc-OO-rLJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jLD-SS-oU3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFI-f3-fmX">
+                                <rect key="frame" x="22" y="28" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="YMA-Xu-sZg"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7oK-Qh-iSQ">
+                                <rect key="frame" x="0.0" y="517" width="414" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Plumeria (Frangipani) is a genus of flowering plants in the dogbane family, Apocynaceae.Most species are deciduous shrubs or small trees. The species variously are indigenous to Mexico, Central America and the Caribbean, and as far south as Brazil, but are grown as cosmopolitan ornamentals in warm regions.Common names for plants in the genus vary widely according to region, variety, and whim, but Frangipani or variations on that theme are the most common. Plumeria also is used directly as a common name, especially in horticultural circles.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="KCA-yO-BT3">
+                                <rect key="frame" x="64" y="111" width="309" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="7oK-Qh-iSQ" id="C6g-j3-dh7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3gU-6G-rkD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-675.36231884057975" y="825.00000000000011"/>
+        </scene>
+        <!--Hibiscus-->
+        <scene sceneID="CdJ-gt-2X5">
+            <objects>
+                <viewController storyboardIdentifier="Hibiscus" id="owx-tt-DX4" customClass="Hibiscus" customModule="CustomVision" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nNG-jJ-HzL"/>
+                        <viewControllerLayoutGuide type="bottom" id="tbz-jS-SRY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZqB-YQ-nxI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muP-8d-UmO">
+                                <rect key="frame" x="22" y="28" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="POC-kC-UWx"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kjf-vs-mTM">
+                                <rect key="frame" x="0.0" y="324" width="414" height="392"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Hibiscus is a genus of flowering plants in the mallow family, Malvaceae. The genus is quite large, comprising several hundred species that are native to warm temperate, subtropical and tropical regions throughout the world. Member species are renowned for their large, showy flowers and those species are commonly known simply as "hibiscus", or less widely known as rose mallow. There are also names for hibiscus such as hardy hibiscus, rose of sharon, and tropical hibiscus.
+
+The genus includes both annual and perennial herbaceous plants, as well as woody shrubs and small trees. The generic name is derived from the Greek name (hibiskos) which Pedanius Dioscorides gave to Althaea officinalis.
+
+Several species are widely cultivated as ornamental plants, notably Hibiscus syriacus and Hibiscus rosa-sinensis.
+
+A tea made from hibiscus flowers is known by many names around the world and is served both hot and cold. The beverage is known for its red colour, tart flavour, and vitamin C content.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Rcf-oC-PYe">
+                                <rect key="frame" x="55" y="77" width="297" height="225"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="kjf-vs-mTM" id="dGT-z2-LBd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yPZ-ph-cj3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-624.63768115942037" y="-635.054347826087"/>
+        </scene>
+        <!--Bougainvillea-->
+        <scene sceneID="0aS-Bf-pMa">
+            <objects>
+                <viewController storyboardIdentifier="Bougainvillea" id="JMP-ny-yVD" customClass="Bougainvillea" customModule="CustomVision" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SvD-vU-zve"/>
+                        <viewControllerLayoutGuide type="bottom" id="rZY-Mq-noX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vh3-yA-BdJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fm-0r-YKn">
+                                <rect key="frame" x="22" y="28" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="qej-dR-WnC"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TXL-dP-dfs">
+                                <rect key="frame" x="0.0" y="435" width="414" height="301"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Bougainvillea is a genus of thorny ornamental vines, bushes, or trees. The inflorescence consists of large colourful sepallike bracts which surround three simple waxy flowers. It is native to South America from Brazil west to Peru and south to southern Argentina. Different authors accept between four and 18 species in the genus. Bougainvillea are also known as buganvilla (Spain), bugambilia (Mexico, Guatemala, Cuba, Philippines), bouganvilla (India), pokok bunga kertas (Indonesia, Malaysia), bougenville (Pakistan), Napoleón (Honduras), jahanamiya (Arab World), veranera (Colombia, Nicaragua, El Salvador, Costa Rica and Panama), trinitaria (Colombia, Panama, Puerto Rico, Dominican Republic &amp; Venezuela), Santa Rita (Argentina, Bolivia, Paraguay and Uruguay), papelillo (Northern Peru), primavera (Brazil), Drillingsblume (triplet flower, Germany), vukamvilia (Greece) or Saron / Saron Par / Sarawn (in Mizoram, India).
+
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="IY7-9Y-TRX">
+                                <rect key="frame" x="55" y="104" width="304" height="241"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="TXL-dP-dfs" id="UTC-OM-mpZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4lk-eX-477" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.39130434782609" y="-629.34782608695662"/>
+        </scene>
+        <!--Ixora-->
+        <scene sceneID="eIu-D6-Mld">
+            <objects>
+                <viewController storyboardIdentifier="Ixora" title="Ixora" id="9EF-DO-5sR" customClass="Ixora" customModule="CustomVision" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fOC-Gv-jIn"/>
+                        <viewControllerLayoutGuide type="bottom" id="OIO-Oq-gok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CAI-NP-lGd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ng0-34-nBi">
+                                <rect key="frame" x="16" y="20" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="9dT-LC-pHd"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="m2T-Q6-qmC">
+                                <rect key="frame" x="0.0" y="420" width="414" height="316"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Ixora is a genus of flowering plants in the Rubiaceae family. It is the only genus in the tribe Ixoreae. It consists of tropical evergreen trees and shrubs and holds around 562 species. Though native to the tropical and subtropical areas throughout the world, its centre of diversity is in Tropical Asia. Ixora also grows commonly in subtropical climates in the United States, such as Florida where it is commonly known as West Indian Jasmine. Other common names include viruchi, rangan, kheme, ponna, chann tanea, techi, pan, siantan, jarum-jarum/jejarum, jungle flame, jungle geranium, cruz de Malta among others. The plants possess leathery leaves, ranging from 3 to 6 inches in length, and produce large clusters of tiny flowers in the summer. Members of Ixora prefer acidic soil, and are suitable choices for bonsai. It is also a popular choice for hedges in parts of South East Asia. In tropical climates they flower year round and are commonly used in Hindu worship, as well as in ayurveda and Indian folk medicine.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Rwb-va-sO0">
+                                <rect key="frame" x="59" y="100" width="305" height="248"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="m2T-Q6-qmC" id="nae-tO-NYX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I2N-17-X6I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="920.28985507246387" y="-629.34782608695662"/>
+        </scene>
+        <!--Vanda-->
+        <scene sceneID="o7M-XD-2X7">
+            <objects>
+                <viewController storyboardIdentifier="Vanda" id="cOE-2H-6Jr" customClass="Vanda" customModule="CustomVision" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lhL-D7-GUQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="8kc-PH-XAq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Ei-lO-Qbe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zcl-yw-1mA">
+                                <rect key="frame" x="22" y="28" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="F4a-bI-J4S"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5tx-6H-DGH">
+                                <rect key="frame" x="0.0" y="505" width="414" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Vanda 'Miss Joaquim' also known as the Singapore orchid and the Princess Aloha orchid and incorrectly as Vanda 'Miss Agnes Joaquim',is a hybrid orchid cultivar that is Singapore's national flower.For its resilence and year-round blooming quality, it was chosen on 15 April 1981 to represent Singapore's uniqueness and hybrid culture. Botanically, this plant has been transferred to the genus Papilionanthe.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="5.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="hVP-RQ-hVS">
+                                <rect key="frame" x="41" y="163" width="332" height="247"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="5tx-6H-DGH" id="mag-Xu-qy3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qvg-oF-H6o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.13043478260872" y="825.81521739130437"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1.jpeg" width="1600" height="1066"/>
+        <image name="2.jpeg" width="612" height="408"/>
+        <image name="3.jpeg" width="300" height="300"/>
+        <image name="4.jpeg" width="1600" height="1129"/>
+        <image name="5.jpeg" width="359" height="458"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="YMA-Xu-sZg"/>
+    </inferredMetricsTieBreakers>
+</document>

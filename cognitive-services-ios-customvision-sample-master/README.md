@@ -5,7 +5,7 @@ author: Henry Lai, Ng Jin, Qing Hui Yi, Benjamin, Chun Yat
 ---
 
 # Sample iOS application for models exported from Custom Vision Service
-This code is a modified version of the MS vision code example
+This code is a modified version of the MS vision ML code
 
 ## Getting Started
 
